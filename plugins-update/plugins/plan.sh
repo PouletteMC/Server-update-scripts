@@ -8,7 +8,7 @@ line=$(head -n 1 $releases) #Read the first line
 
 link=$(grep -oP '(?<=/download/).*?(?=.jar)'<<< "$line")
 
-wget -O /home/poulette/plan/plan.jar https://github.com/plan-player-analytics/Plan/releases/download/$link.jar
+wget -O /home/poulette/plugins/plan.jar https://github.com/plan-player-analytics/Plan/releases/download/$link.jar
 
 chmod +x plan.jar
 
