@@ -9,19 +9,17 @@ if [[ $EUID -ne 0 ]];
 fi
 
 crea() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/crea.sh?token=APHWESA5J27KTAQAK66AHAS757AAA)
-}
+    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/crea.sh)
 
 sandbox() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/sandbox.sh?token=APHWESCFQ3GAP4IK6YKZN3K757ADW)
-}
+    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/sandbox.sh)
 
 survie() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/survie.sh?token=APHWESAJ52C4NYFULJN77L2757AGQ)
+    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/survie.sh)
 }
 
 tous() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/tous.sh?token=APHWESE3OIOPWCEGBMMPKNS757AIC)
+    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/tous.sh)
 }
 
 done=false
