@@ -1,9 +1,12 @@
 #!/bin/bash
-wget -O /home/poulette/plan/links.txt https://raw.githubusercontent.com/plan-player-analytics/Plan/master/versions.txt
 
-releases=$(awk '^/REL/' links.txt) #Include only release versions
+wget -O /home/poulette/downloads/links https://raw.githubusercontent.com/plan-player-analytics/Plan/master/versions.txt
 
-line=$(head -n 1 $releases) #Read the first line
+releases=$(grep '^REL' /home/poulette/downloads/links > /home/poulette/downloads/links_temp)
+
+mv links_temp links
+
+line=$(head -n 1 /home/poulette/downloads/links.txt)
 
 link=$(grep -oP '(?<=/download/).*?(?=.jar)'<<< "$line")
 
