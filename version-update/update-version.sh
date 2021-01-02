@@ -9,31 +9,46 @@ if [[ $EUID -ne 0 ]];
 fi
 
 crea() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/servers/crea.sh)
-}
-sandbox() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/servers/sandbox.sh)
-}
-survie() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/servers/survie.sh)
-}
-tous() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/servers/tous.sh)
+    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/version-update/servers/crea.sh)
 }
 
+sandbox() {
+    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/version-update/servers/sandbox.sh)
+}
+
+survie() {
+    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/version-update/servers/survie.sh)
+}
+
+tous() {
+    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/version-update/servers/tous.sh)
+}
+
+waterfall() {
+    bash<(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/version-update/servers/waterfall.sh)
+}
+
+lobby() {
+    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/version-update/servers/lobby.sh)
+}
 done=false
 
 while [ "$done" == false ]; do
 
     options=(
         "Tous"
+        "Waterfall"
+        "Lobby"
         "Survie"
         "Sandbox"
         "Créa"
+        
     )
 
     actions=(
-        "tous"
+        "waterfall; lobby; survie; sandbox; crea"
+        "waterfall"
+        "lobby"
         "survie"
         "sandbox"
         "crea"
