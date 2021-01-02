@@ -41,11 +41,11 @@ while [ "$done" == false ]; do
         "crea"
     )
 
-output "Que veux-tu mettre à jour"
+echo "Que veux-tu mettre à jour"
 
 
 for i in "${!options[@]}"; do
-    output "[$i] ${options[$i]}"
+    echo "[$i] ${options[$i]}"
   done
 
 
