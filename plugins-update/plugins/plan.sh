@@ -1,3 +1,4 @@
+#!/bin/bash
 wget -O /home/poulette/plan/links.txt https://raw.githubusercontent.com/plan-player-analytics/Plan/master/versions.>
 
 line=$(head -n 1 links.txt)

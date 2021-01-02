@@ -1,7 +1,5 @@
 #!/bin/bash
 
-wget -O /home/poulette/paper/server.jar https://papermc.io/api/v1/paper/1.16.4/latest/download
-
 if [[ $EUID -ne 0 ]];
     then
         echo "Cette commande doit être utilisée par root"
@@ -20,11 +18,13 @@ done=false
 while [ "$done" == false ]; do
 
     options=(
+        "Tous"
         "Paper"
         "Waterfall"
     )
 
     actions=(
+        "paper; waterfall"
         "paper"
         "waterfall"
     )

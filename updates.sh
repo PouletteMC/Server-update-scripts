@@ -1,7 +1,5 @@
 #!/bin/bash
 
-wget -O /home/poulette/paper/server.jar https://papermc.io/api/v1/paper/1.16.4/latest/download
-
 if [[ $EUID -ne 0 ]];
     then
         echo "Cette commande doit être utilisée par root"
@@ -9,10 +7,10 @@ if [[ $EUID -ne 0 ]];
 fi
 
 plugins() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/servers/crea.sh)
+    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/plugins-update/update-plugins.sh)
 }
 version() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/servers/sandbox.sh)
+    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/version-update/update-version.sh)
 }
 
 done=false
@@ -20,11 +18,13 @@ done=false
 while [ "$done" == false ]; do
 
     options=(
+        "Tous"
         "Plugins"
         "Version"
     )
 
     actions=(
+        "plugins; version"
         "plugins"
         "version"
     )
