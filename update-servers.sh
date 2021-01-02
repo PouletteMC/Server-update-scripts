@@ -56,6 +56,3 @@ valid_input=("$(for ((i=0;i<=${#actions[@]}-1;i+=1)); do echo "${i}"; done)")
 [[ ! " ${valid_input[*]} " =~ ${action} ]] && error "Invalid option"
 [[ " ${valid_input[*]} " =~ ${action} ]] && done=true && eval "${actions[$action]}"
 done
-
-
-mv /home/poulette/paper/server.jar /home/poulette/paper/"$(date)-paper.jar"
