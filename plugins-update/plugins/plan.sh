@@ -1,5 +1,5 @@
 #!/bin/bash
-wget -O /home/poulette/plan/links.txt https://raw.githubusercontent.com/plan-player-analytics/Plan/master/versions.>
+wget -O /home/poulette/plan/links.txt https://raw.githubusercontent.com/plan-player-analytics/Plan/master/versions.txt
 
 releases=$(awk '^/REL/' links.txt) #Include only release versions
 
