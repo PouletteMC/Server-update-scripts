@@ -2,7 +2,7 @@
 
 versions=$(curl -L https://raw.githubusercontent.com/plan-player-analytics/Plan/master/versions.txt)
 
-releases=$(awk '^/REL/' $versions) #Include only release versions
+releases=$(awk -v var=$versions '^/REL/') #Include only release versions
 
 line=$(head -n 1 $releases) #Read the first line
 
