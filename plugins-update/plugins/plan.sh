@@ -4,7 +4,7 @@ wget -O /home/poulette/downloads/links https://raw.githubusercontent.com/plan-pl
 
 releases=$(grep '^REL' /home/poulette/downloads/links > /home/poulette/downloads/links_temp)
 
-mv links_temp links
+mv /home/poulette/downloads/links_temp /home/poulette/downloads/links
 
 line=$(head -n 1 /home/poulette/downloads/links.txt)
 
