@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wget -O /home/poulette/paper/server.jar https://papermc.io/api/v1/paper/1.16.4/latest/download
+wget -O /home/poulette/downloads/server.jar https://papermc.io/api/v1/paper/1.16.4/latest/download
 
 if [[ $EUID -ne 0 ]];
     then
