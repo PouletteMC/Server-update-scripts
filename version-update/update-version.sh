@@ -29,7 +29,7 @@ tous() {
 }
 
 waterfall() {
-    bash<(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/version-update/servers/waterfall.sh)
+    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/version-update/servers/waterfall.sh)
 }
 
 lobby() {
