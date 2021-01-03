@@ -1,7 +1,7 @@
 #!/bin/bash
 
-wget -O -q /home/poulette/downloads/server.jar https://papermc.io/api/v1/paper/1.16.4/latest/download
-wget -O -q /home/poulette/downloads/waterfall.jar https://papermc.io/api/v1/waterfall/1.16/latest/download
+wget -O /home/poulette/downloads/server.jar https://papermc.io/api/v1/paper/1.16.4/latest/download -q
+wget -O /home/poulette/downloads/waterfall.jar https://papermc.io/api/v1/waterfall/1.16/latest/download -q
 
 chmod +x /home/poulette/downloads/server.jar
 chmod +x /home/poulette/downloads/waterfall.jar

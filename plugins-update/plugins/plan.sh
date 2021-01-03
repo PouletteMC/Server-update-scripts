@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wget -O -q /home/poulette/downloads/links https://raw.githubusercontent.com/plan-player-analytics/Plan/master/versions.txt
+wget -O /home/poulette/downloads/links https://raw.githubusercontent.com/plan-player-analytics/Plan/master/versions.txt -q
 
 releases=$(grep '^REL' /home/poulette/downloads/links > /home/poulette/downloads/links_temp)
 
@@ -10,6 +10,6 @@ line=$(head -n 1 /home/poulette/downloads/links.txt)
 
 link=$(grep -oP '(?<=/download/).*?(?=.jar)'<<< "$line")
 
-wget -O -q /home/poulette/plugins/Plan.jar https://github.com/plan-player-analytics/Plan/releases/download/$link.jar
+wget -O /home/poulette/plugins/Plan.jar https://github.com/plan-player-analytics/Plan/releases/download/$link.jar -q
 
 chmod +x /home/poulette/plugins/Plan.jar
