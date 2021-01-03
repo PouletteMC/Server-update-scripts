@@ -13,3 +13,5 @@ link=$(grep -oP '(?<=/download/).*?(?=.jar)'<<< "$line")
 wget -O /home/poulette/plugins/Plan.jar https://github.com/plan-player-analytics/Plan/releases/download/$link.jar -q
 
 chmod +x /home/poulette/plugins/Plan.jar
+
+echo "Plan mis à jour"

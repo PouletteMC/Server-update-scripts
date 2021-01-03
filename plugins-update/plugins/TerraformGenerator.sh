@@ -4,3 +4,5 @@ wget -O /home/poulette/plugins/Drycell.jar https://api.spiget.org/v2/resources/7
 
 chmod +x /home/poulette/plugins/TerraformGenerator.jar
 chmod +x /home/poulette/plugins/Drycell.jar
+
+echo "TerraformGenerator et Drycell mis à jour"
