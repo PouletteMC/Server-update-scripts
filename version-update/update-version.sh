@@ -2,6 +2,8 @@
 
 wget -O /home/poulette/downloads/server.jar https://papermc.io/api/v1/paper/1.16.4/latest/download
 
+chmod +x /home/poulette/downloads/server.jar
+
 if [[ $EUID -ne 0 ]];
     then
         echo "Cette commande doit être utilisée par root"
