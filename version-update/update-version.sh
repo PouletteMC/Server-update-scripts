@@ -24,10 +24,6 @@ survie() {
     bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/version-update/servers/survie.sh)
 }
 
-tous() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/version-update/servers/tous.sh)
-}
-
 waterfall() {
     bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/version-update/servers/waterfall.sh)
 }

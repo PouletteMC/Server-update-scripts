@@ -48,6 +48,4 @@ cp /home/poulette/plugins/MaSuiteCore.jar /mnt/SSD/526cb2cb-becd-4af8-a33b-fdb06
 cp /home/poulette/plugins/MaSuiteCore.jar /mnt/SSD/2d04f1e6-74c5-4215-88e8-4a02ba08741f/plugins
 cp /home/poulette/plugins/MaSuiteCore.jar /mnt/local_share/var/lib/pterodactyl/volumes/c5b4cb41-0d23-484d-b9ad-4b07f9197177
 
-echo -e "\e[32mLes plugins paper ont été mis à jour !"
-sleep 1
-reset
+echo "Les plugins paper ont été mis à jour !"

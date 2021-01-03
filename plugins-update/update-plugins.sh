@@ -8,9 +8,11 @@ fi
 
 paper() {
     bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/plugins-update/paper.sh)
+    echo "Les plugins Paper ont été mis à jour."
 }
 waterfall() {
     bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/plugins-update/waterfall.sh)
+    echo "Les plugins Waterfall ont été mis à jour."
 }
 
 done=false

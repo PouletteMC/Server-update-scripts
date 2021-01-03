@@ -26,6 +26,4 @@ cp /home/poulette/plugins/MoveMeNow.jar /mnt/SSD/51301113-f872-4d08-8f6e-9d43a53
 cp /home/poulette/plugins/ServerListPlus.jar /mnt/SSD/51301113-f872-4d08-8f6e-9d43a5336b41
 cp /home/poulette/plugins/TAB.jar /mnt/SSD/51301113-f872-4d08-8f6e-9d43a5336b41
 
-echo -e "\e[32mLes plugins waterfall ont été mis à jour !"
-sleep 1
-reset
+echo "Les plugins waterfall ont été mis à jour !"
