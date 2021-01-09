@@ -6,11 +6,13 @@ if [[ $EUID -ne 0 ]];
         exit 1
 fi
 
-plugins() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/plugins-update/update-plugins.sh)
+paper() {
+    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/plugins-update/paper.sh)
+    echo "Les plugins Paper ont été mis à jour."
 }
-version() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/version-update/update-version.sh)
+waterfall() {
+    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/plugins-update/waterfall.sh)
+    echo "Les plugins Waterfall ont été mis à jour."
 }
 
 done=false
@@ -19,15 +21,16 @@ while [ "$done" == false ]; do
 
     options=(
         "Tous"
-        "Plugins"
-        "Version"
+        "Paper"
+        "Waterfall"
     )
 
     actions=(
-        "plugins; version"
-        "plugins"
-        "version"
+        "paper; waterfall"
+        "paper"
+        "waterfall"
     )
+
 
 echo "Que veux-tu mettre à jour"
 
