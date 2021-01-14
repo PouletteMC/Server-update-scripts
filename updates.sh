@@ -4,13 +4,15 @@ hostname=$(hostname)
 
 if [[ $hostname == quanta ]];
     then
-    bash <(curl https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/quanta/quanta.sh)
     echo "Quanta"
+    bash <(curl https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/quanta/quanta.sh)
+    
 
 elif [[ $hostname == asus ]];
     then 
-    bash <(curl https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/asus/asus.sh)
     echo "Asus"
+    bash <(curl https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/asus/asus.sh)
+    
 
 else 
     echo "Unknown computer"
