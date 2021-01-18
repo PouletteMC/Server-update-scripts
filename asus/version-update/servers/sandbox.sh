@@ -1,3 +1,3 @@
 #!/bin/bash
-cp /home/poulette/downloads/server.jar /mnt/SSD/55c0ebc9-a763-4294-b760-e6b644396687
+cp /home/poulette/downloads/server.jar /var/lib/pterodactyl/volumes/
 echo "Sandbox a été mis à jour"
