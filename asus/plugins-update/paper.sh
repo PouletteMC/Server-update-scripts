@@ -1,11 +1,11 @@
 #!/bin/bash
 
-bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/plugins-update/plugins/BungeeGuard.sh)
-bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/plugins-update/plugins/FCP.sh)
-bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/plugins-update/plugins/LuckPerms.sh)
-bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/plugins-update/plugins/Plan.sh)
-bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/plugins-update/plugins/TerraformGenerator.sh)
-bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/plugins-update/plugins/masuite/MaSuiteCore.sh)
+bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/asus/plugins-update/plugins/BungeeGuard.sh)
+bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/asus/plugins-update/plugins/FCP.sh)
+bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/asus/plugins-update/plugins/LuckPerms.sh)
+bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/asus/plugins-update/plugins/Plan.sh)
+bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/asus/plugins-update/plugins/TerraformGenerator.sh)
+bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/asus/plugins-update/plugins/masuite/MaSuiteCore.sh)
 
 cp /home/poulette/plugins/BungeeGuard.jar /mnt/SSD/55c0ebc9-a763-4294-b760-e6b644396687/plugins
 cp /home/poulette/plugins/BungeeGuard.jar /mnt/SSD/526cb2cb-becd-4af8-a33b-fdb0636b05ac/plugins

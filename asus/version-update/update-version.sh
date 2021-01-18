@@ -13,23 +13,23 @@ if [[ $EUID -ne 0 ]];
 fi
 
 crea() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/version-update/servers/crea.sh)
+    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/asus/version-update/servers/crea.sh)
 }
 
 sandbox() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/version-update/servers/sandbox.sh)
+    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/asus/version-update/servers/sandbox.sh)
 }
 
 survie() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/version-update/servers/survie.sh)
+    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/asus/version-update/servers/survie.sh)
 }
 
 waterfall() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/version-update/servers/waterfall.sh)
+    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/asus/version-update/servers/waterfall.sh)
 }
 
 lobby() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/version-update/servers/lobby.sh)
+    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/asus/version-update/servers/lobby.sh)
 }
 done=false
 

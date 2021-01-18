@@ -7,10 +7,10 @@ if [[ $EUID -ne 0 ]];
 fi
 
 plugins() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/plugins-update/update-plugins.sh)
+    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/quanta/plugins-update/update-plugins.sh)
 }
 version() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/version-update/update-version.sh)
+    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/quanta/version-update/update-version.sh)
 }
 
 done=false
