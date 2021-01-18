@@ -1,6 +1,6 @@
 # Easily update my minecraft servers
 This script was created to easily update my minecraft servers. 
-It can update both the server's JAR and its plugins.
+It can update both the servers' JARs and their plugins.
 It is limited to specific computers at the time as the paths are hard coded...
 
 
