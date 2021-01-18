@@ -1,17 +1,14 @@
 #!/bin/bash
 
-wget -O /home/poulette/downloads/links https://raw.githubusercontent.com/plan-player-analytics/Plan/master/versions.txt -q
 
-releases=$(grep '^REL' /home/poulette/downloads/links > /home/poulette/downloads/links_temp)
+wget -O /home/poulette/downloads/versions https://raw.githubusercontent.com/plan-player-analytics/Plan/master/versions.txt -q
 
-mv /home/poulette/downloads/links_temp /home/poulette/downloads/links
+line=$(head -n 1 /home/poulette/downloads/versions)
 
-line=$(head -n 1 /home/poulette/downloads/links.txt)
+version=$(grep -oP '(?<=/download/).*?(?=.jar)'<<< "$line")
 
-link=$(grep -oP '(?<=/download/).*?(?=.jar)'<<< "$line")
+link="https://github.com/plan-player-analytics/Plan/releases/download/${version}.jar"
 
-wget -O /home/poulette/plugins/Plan.jar https://github.com/plan-player-analytics/Plan/releases/download/$link.jar -q
+wget -O /home/poulette/plugins/Plan.jar "$link" -q
 
 chmod +x /home/poulette/plugins/Plan.jar
-
-echo "Plan mis à jour"
