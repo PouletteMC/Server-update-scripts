@@ -1,17 +1,4 @@
-#!/bin/bash
-
-wget -O /home/poulette/downloads/links https://raw.githubusercontent.com/plan-player-analytics/Plan/master/versions.txt -q
-
-releases=$(grep '^REL' /home/poulette/downloads/links > /home/poulette/downloads/links_temp)
-
-mv /home/poulette/downloads/links_temp /home/poulette/downloads/links
-
-line=$(head -n 1 /home/poulette/downloads/links.txt)
-
-link=$(grep -oP '(?<=/download/).*?(?=.jar)'<<< "$line")
-
-wget -O /home/poulette/plugins/Plan.jar https://github.com/plan-player-analytics/Plan/releases/download/$link.jar -q
-
+#!/bin/#!/usr/bin/env bash
+wget -O /home/poulette/plugins/Plan.jar https://api.spiget.org/v2/resources/32536/download -U "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)" "http://www.google.com" -q
 chmod +x /home/poulette/plugins/Plan.jar
-
 echo "Plan mis à jour"
