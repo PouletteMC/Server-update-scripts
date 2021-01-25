@@ -35,7 +35,7 @@ cp /home/poulette/plugins/MaSuiteCore.jar /mnt/SSD/526cb2cb-becd-4af8-a33b-fdb06
 cp /home/poulette/plugins/MaSuiteCore.jar /mnt/SSD/2d04f1e6-74c5-4215-88e8-4a02ba08741f/plugins
 cp /home/poulette/plugins/MaSuiteCore.jar /mnt/local_share/var/lib/pterodactyl/volumes/c5b4cb41-0d23-484d-b9ad-4b07f9197177
 
-bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/plugins/masuite/WorldGuard.sh)
+bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/plugins/WorldGuard.sh)
 
 cp /home/poulette/plugins/MaSuiteCore.jar /mnt/SSD/55c0ebc9-a763-4294-b760-e6b644396687/plugins
 cp /home/poulette/plugins/MaSuiteCore.jar /mnt/SSD/526cb2cb-becd-4af8-a33b-fdb0636b05ac/plugins
@@ -43,9 +43,17 @@ cp /home/poulette/plugins/MaSuiteCore.jar /mnt/SSD/2d04f1e6-74c5-4215-88e8-4a02b
 cp /home/poulette/plugins/MaSuiteCore.jar /mnt/local_share/var/lib/pterodactyl/volumes/c5b4cb41-0d23-484d-b9ad-4b07f9197177
 
 
-bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/plugins/masuite/Vault.sh)
+bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/plugins/Vault.sh)
 
 cp /home/poulette/plugins/Vault.jar /mnt/SSD/55c0ebc9-a763-4294-b760-e6b644396687/plugins
 cp /home/poulette/plugins/Vault.jar /mnt/SSD/526cb2cb-becd-4af8-a33b-fdb0636b05ac/plugins
 cp /home/poulette/plugins/Vault.jar /mnt/SSD/2d04f1e6-74c5-4215-88e8-4a02ba08741f/plugins
 cp /home/poulette/plugins/Vault.jar /mnt/local_share/var/lib/pterodactyl/volumes/c5b4cb41-0d23-484d-b9ad-4b07f9197177
+
+
+bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/plugins/Dynmap.sh)
+
+cp /home/poulette/plugins/Dynamp.jar /mnt/quanta/mnt/SSD/55c0ebc9-a763-4294-b760-e6b644396687/plugins
+cp /home/poulette/plugins/Dynamp.jar /mnt/quanta/mnt/SSD/526cb2cb-becd-4af8-a33b-fdb0636b05ac/plugins
+cp /home/poulette/plugins/Dynamp.jar /mnt/quanta/mnt/SSD/2d04f1e6-74c5-4215-88e8-4a02ba08741f/plugins
+cp /home/poulette/plugins/Dynamp.jar /var/lib/pterodactyl/volumes/c5b4cb41-0d23-484d-b9ad-4b07f9197177/plugins
