@@ -6,7 +6,7 @@ releases=$(grep '^REL' /home/poulette/downloads/links > /home/poulette/downloads
 
 mv /home/poulette/downloads/links_temp /home/poulette/downloads/links
 
-line=$(head -n 1 /home/poulette/downloads/links.txt)
+line=$(head -n 1 /home/poulette/downloads/links)
 
 link=$(grep -oP '(?<=/download/).*?(?=.jar)'<<< "$line")
 
