@@ -1,10 +1,8 @@
 #!/bin/bash
 
 wget -O /home/poulette/downloads/server.jar https://papermc.io/api/v1/paper/1.16.4/latest/download -q
-wget -O /home/poulette/downloads/waterfall.jar https://papermc.io/api/v1/waterfall/1.16/latest/download -q
-
 chmod +x /home/poulette/downloads/server.jar
-chmod +x /home/poulette/downloads/waterfall.jar
+
 
 if [[ $EUID -ne 0 ]];
     then
@@ -13,42 +11,29 @@ if [[ $EUID -ne 0 ]];
 fi
 
 crea() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/version-update/servers/crea.sh)
+    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/quanta/version-update/servers/crea.sh)
 }
 
 sandbox() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/version-update/servers/sandbox.sh)
+    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/quanta/version-update/servers/sandbox.sh)
 }
 
 survie() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/version-update/servers/survie.sh)
+    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/quanta/version-update/servers/survie.sh)
 }
-
-waterfall() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/version-update/servers/waterfall.sh)
-}
-
-lobby() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/version-update/servers/lobby.sh)
-}
-done=false
+one=false
 
 while [ "$done" == false ]; do
 
     options=(
-        "Tous"
-        "Waterfall"
-        "Lobby"
-        "Survie"
+        "Tous"        "Survie"
         "Sandbox"
         "Créa"
-        
+
     )
 
     actions=(
-        "waterfall; lobby; survie; sandbox; crea"
-        "waterfall"
-        "lobby"
+        "survie; sandbox; crea"
         "survie"
         "sandbox"
         "crea"
