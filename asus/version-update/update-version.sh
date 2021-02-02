@@ -12,18 +12,6 @@ if [[ $EUID -ne 0 ]];
         exit 1
 fi
 
-crea() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/asus/version-update/servers/crea.sh)
-}
-
-sandbox() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/asus/version-update/servers/sandbox.sh)
-}
-
-survie() {
-    bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/asus/version-update/servers/survie.sh)
-}
-
 waterfall() {
     bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/asus/version-update/servers/waterfall.sh)
 }
@@ -39,19 +27,13 @@ while [ "$done" == false ]; do
         "Tous"
         "Waterfall"
         "Lobby"
-        "Survie"
-        "Sandbox"
-        "Créa"
         
     )
 
     actions=(
-        "waterfall; lobby; survie; sandbox; crea"
+        "waterfall; lobby;"
         "waterfall"
         "lobby"
-        "survie"
-        "sandbox"
-        "crea"
     )
 
 echo "Que veux-tu mettre à jour"
