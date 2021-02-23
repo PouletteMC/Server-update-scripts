@@ -32,11 +32,11 @@ bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-script
 cp /home/poulette/plugins/MaSuiteCore.jar $PTEROLOBBY/plugins
 
 
-bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/plugins/masuite/WorldGuard.sh)
+bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/plugins/WorldGuard.sh)
 
 cp /home/poulette/plugins/WorldGuard.jar $PTEROLOBBY/plugins
 
 
-bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/plugins/masuite/Vault.sh)
+bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/plugins/Vault.sh)
 
 cp /home/poulette/plugins/Vault.jar $PTEROLOBBY/plugins
