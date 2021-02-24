@@ -1,11 +1,5 @@
 #!/bin/bash
 
-wget -O /home/poulette/downloads/server.jar https://papermc.io/api/v1/paper/1.16.4/latest/download -q
-wget -O /home/poulette/downloads/waterfall.jar https://papermc.io/api/v1/waterfall/1.16/latest/download -q
-
-chmod +x /home/poulette/downloads/server.jar
-chmod +x /home/poulette/downloads/waterfall.jar
-
 if [[ $EUID -ne 0 ]];
     then
         echo "Cette commande doit être utilisée par root"
