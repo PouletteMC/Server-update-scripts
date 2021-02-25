@@ -1,4 +1,4 @@
 #!/bin/bash
-wget -O /home/poulette/plugins/ServerListPlus.jar https://api.spiget.org/v2/resources/241/download -q
-chmod +x /home/poulette/plugins/ServerListPlus.jar
+wget -O /home/poulette/plugins/WorldGuard.jar https://dev.bukkit.org/projects/worldguard/files/latest -q
+chmod +x /home/poulette/plugins/WorldGuard.jar
 echo "ServerListPlus updated"
