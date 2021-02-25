@@ -34,9 +34,9 @@ cp /home/poulette/plugins/MaSuiteCore.jar $PTEROSANDBOX/plugins
 cp /home/poulette/plugins/MaSuiteCore.jar $PTEROCREA/plugins
 
 bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/plugins/WorldGuard.sh)
-cp /home/poulette/plugins/MaSuiteCore.jar $PTEROSURVIE/plugins
-cp /home/poulette/plugins/MaSuiteCore.jar $PTEROSANDBOX/plugins
-cp /home/poulette/plugins/MaSuiteCore.jar $PTEROCREA/plugins
+cp /home/poulette/plugins/WorldGuard.jar $PTEROSURVIE/plugins
+cp /home/poulette/plugins/WorldGuard.jar $PTEROSANDBOX/plugins
+cp /home/poulette/plugins/WorldGuard.jar $PTEROCREA/plugins
 
 bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/plugins/Vault.sh)
 cp /home/poulette/plugins/Vault.jar $PTEROSURVIE/plugins
