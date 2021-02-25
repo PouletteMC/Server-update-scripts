@@ -42,8 +42,3 @@ bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-script
 cp /home/poulette/plugins/Vault.jar $PTEROSURVIE/plugins
 cp /home/poulette/plugins/Vault.jar $PTEROSANDBOX/plugins
 cp /home/poulette/plugins/Vault.jar $PTEROCREA/plugins
-
-bash <(curl -s https://raw.githubusercontent.com/PouletteMC/Server-update-scripts/main/plugins/Dynmap.sh)
-cp /home/poulette/plugins/Dynamp.jar $PTEROSURVIE/plugins
-cp /home/poulette/plugins/Dynamp.jar $PTEROSANDBOX/plugins
-cp /home/poulette/plugins/Dynamp.jar $PTEROCREA/plugins
