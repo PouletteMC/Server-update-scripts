@@ -7,4 +7,4 @@ chmod +x /home/poulette/plugins/LuckPerms.jar
 #Waterfall
 wget -O /home/poulette/plugins/LuckPerms-Waterfall.jar  -q
 chmod +x /home/poulette/plugins/LuckPerms-Waterfall.jar
-echo "LuckPerms mis à jour"
+echo "LuckPerms updated"

@@ -14,4 +14,4 @@ wget -O /home/poulette/plugins/Plan.jar https://github.com/plan-player-analytics
 
 chmod +x /home/poulette/plugins/Plan.jar
 
-echo "Plan mis à jour"
+echo "Plan updated"

@@ -2,7 +2,7 @@
 
 if [[ $EUID -ne 0 ]];
     then
-        echo "Cette commande doit être utilisée par root"
+        echo "This command must be executed as root"
         exit 1
 fi
 
@@ -18,7 +18,7 @@ done=false
 while [ "$done" == false ]; do
 
     options=(
-        "Tous"
+        "Both"
         "Plugins"
         "Version"
     )
@@ -29,7 +29,7 @@ while [ "$done" == false ]; do
         "version"
     )
 
-echo "Que veux-tu mettre à jour"
+echo "What should be updated ?"
 
 
 for i in "${!options[@]}"; do
@@ -40,9 +40,9 @@ for i in "${!options[@]}"; do
 echo -n "* Input 0-$((${#actions[@]}-1)): "
 read -r action
 
-    [ -z "$action" ] && error "Une entrée est nécessaire" && continue
+    [ -z "$action" ] && error "An entry is required" && continue
 
 valid_input=("$(for ((i=0;i<=${#actions[@]}-1;i+=1)); do echo "${i}"; done)")
-[[ ! " ${valid_input[*]} " =~ ${action} ]] && error "Option invalide"
+[[ ! " ${valid_input[*]} " =~ ${action} ]] && error "Invalid entry"
 [[ " ${valid_input[*]} " =~ ${action} ]] && done=true && eval "${actions[$action]}"
 done

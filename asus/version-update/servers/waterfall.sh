@@ -3,4 +3,4 @@ wget -O /home/poulette/downloads/waterfall.jar https://papermc.io/api/v1/waterfa
 chmod +x /home/poulette/downloads/waterfall.jar
 
 cp /home/poulette/downloads/waterfall.jar $PTEROPROXY
-echo "Waterfall a été mis à jour"
+echo "Waterfall was updated"
